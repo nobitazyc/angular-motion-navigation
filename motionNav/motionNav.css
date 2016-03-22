@@ -1,0 +1,85 @@
+body{
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+}
+.motion_nav {
+  width:100%;
+  box-sizing: border-box;
+  background-color: pink;
+  padding:10px 20px;
+  display: inline-block;
+}
+.motion_nav-menu{
+  transition:0.2s;
+  float: left;
+}
+.motion_nav-menu-list{
+  padding:0;
+}
+.motion_nav-close{
+  color:white;
+  font-size: 0px;
+  transition: 0.1s;
+  -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0.1s; /* Safari */
+  transition-delay: 0.1s;
+}
+.motion_nav-close.open{
+  font-size: 30px;
+  margin-right:20px;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition-delay: 0s; /* Safari */
+  transition-delay: 0s;
+}
+.motion_nav-menu-item{
+  font-weight: lighter;
+  font-size: 2px;
+  background-color:white;
+  color:white;
+  margin-top:3px;
+  margin-bottom:3px;
+  width: 30px;
+  display: block;
+  transition:0.15s;
+  -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.motion_nav-menu.open .motion_nav-menu-item{
+  font-size: 20px;
+  padding-left:30px;
+  margin-top:15px;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+.motion_nav-menu-item:nth-of-type(1){
+  -webkit-transition-delay: 0.15s; /* Safari */
+  transition-delay: 0.15s;
+}
+.motion_nav-menu-item:nth-of-type(2){
+  -webkit-transition-delay: 0.1s; /* Safari */
+  transition-delay: 0.1s;
+}
+.motion_nav-menu-item:nth-of-type(3){
+  -webkit-transition-delay: 0.05s; /* Safari */
+  transition-delay: 0.05s;
+}
+.motion_nav-menu.open .motion_nav-menu-item:nth-of-type(1){
+  -webkit-transition-delay: 0s; /* Safari */
+  transition-delay: 0s;
+}
+.motion_nav-menu.open .motion_nav-menu-item:nth-of-type(2){
+  -webkit-transition-delay: 0.05s; /* Safari */
+  transition-delay: 0.05s;
+}
+.motion_nav-menu.open .motion_nav-menu-item:nth-of-type(3){
+  -webkit-transition-delay: 0.1s; /* Safari */
+  transition-delay: 0.1s;
+}
+.motion_nav-menu.open .motion_nav-menu-item:nth-of-type(4){
+  -webkit-transition-delay: 0.15s; /* Safari */
+  transition-delay: 0.15s;
+}
